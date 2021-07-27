@@ -9,7 +9,7 @@ const showResults = (katas, results) => {
     const div = document.createElement('div')
     const p = document.createElement('p')
     const kataTitle = document.createElement('h2')
-    p.innerHTML = results
+    p.textContent = JSON.stringify(results)
     kataTitle.innerHTML = katas
     div.appendChild(kataTitle)
     div.appendChild(p)
